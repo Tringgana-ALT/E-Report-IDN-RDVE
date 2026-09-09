@@ -1,3 +1,17 @@
+/* General */
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 510px) {
+    .hero .col img {
+        width: 100%;
+    }
+    
+}
+
+
+/* Navigation Bar Styling */
 .navbar-brand {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 700;
@@ -6,4 +20,18 @@
 .navbar-collapse{
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
+}
+
+/* Hero Styling */
+
+.hero .col img {
+    width: 500px;
+}
+
+.hero h1{
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
