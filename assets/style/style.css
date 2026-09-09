@@ -3,9 +3,22 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
 @media screen and (max-width: 510px) {
     .hero .col img {
         width: 100%;
+    }
+
+    .about .col img {
+        width: 80%;
     }
     
 }
@@ -24,6 +37,8 @@ body {
 
 /* Hero Styling */
 
+
+
 .hero .col img {
     width: 500px;
 }
@@ -31,7 +46,9 @@ body {
 .hero h1{
     font-family: "Bricolage Grotesque", sans-serif;
 }
-section {
-    padding-top: 100px;
-    padding-bottom: 50px;
+
+/* about section */
+
+.about .col img{
+    width: 50%;
 }
