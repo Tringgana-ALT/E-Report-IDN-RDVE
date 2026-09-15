@@ -52,3 +52,10 @@ h1 {
 .about .col img{
     width: 50%;
 }
+
+/* Services section */
+
+.services h4 {
+    font-weight: 700;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
