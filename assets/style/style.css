@@ -1,4 +1,8 @@
 /* General */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "DM Sans", sans-serif;
 }
@@ -64,4 +68,8 @@ h1 {
 footer {
     margin-top: 100px;
     padding-top: 20px;
+}
+
+.copyright {
+    margin-top: 100px;
 }

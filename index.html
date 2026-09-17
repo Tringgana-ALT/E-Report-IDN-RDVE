@@ -24,13 +24,21 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="./assets/style/style.css">
+
+    <!-- CDN Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS CSS  Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
     <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
         <div class="container">
-            <a class="navbar-brand gap-2 d-flex align-items-center" href="#">
+            <a class="navbar-brand gap-2 d-flex align-items-center animate__animated animate__fadeIn animate__delay-1s" href="#hero">
                 <img src="./assets/images/IDN Logo.png" alt="Logo" width="45" height="45"
                     class="d-inline-block align-text-top rounded">
                 <span class="fw-bold text-primary-emphasis">IDN E-Report</span>
@@ -42,19 +50,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-1">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-primary" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">About</a>
+                        <a class="nav-link text-primary" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Services</a>
+                        <a class="nav-link text-primary" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Recent</a>
+                        <a class="nav-link text-primary" href="#report">Recent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">FAQ</a>
+                        <a class="nav-link text-primary" href="#faq">FAQ</a>
                     </li>
 
                 </ul>
@@ -64,24 +72,24 @@
 
     <!-- Hero Section -->
 
-    <section id="hero mt-5">
+    <section id="hero" class="mt-5">
         <div class="container">
             <div
-                class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start">
+                class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start overflow-hidden">
                 <div class="col">
-                    <h1 class="fw-bold">
+                    <h1 class="fw-bold animate__animated animate__fadeInLeft">
                         Selamat datang <br>
                         di Aplikasi <span class="text-primary">E-Report</span><br>
                         2026
                     </h1>
-                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quo
+                    <p class="lh-lg animate__animated animate__fadeInLeft animate__delay-1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quo
                         sapiente veniam dolores! Eum aliquid dolores voluptatem sequi cupiditate rerum eligendi</p>
-                    <div class="mt-5">
-                        <a href="" class="btn btn-primary">About Us</a>
-                        <a href="" class="btn btn-outline-primary">Lets Start</a>
+                    <div class="mt-5 animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#about" class="btn btn-primary">About Us</a>
+                        <a href="#services" class="btn btn-outline-primary">Lets Start</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-lg-end justify-content-center">
+                <div class="col d-flex justify-content-lg-end justify-content-center animate__animated animate__fadeInRight animate__delay-1s">
                     <img src="./assets/images/undraw_software-engineer_ljie.svg" alt="Hero images">
                 </div>
             </div>
@@ -93,11 +101,11 @@
         <div class="container">
             <div class="about row">
                 <div class="col text-center">
-                    <h1 class="fw-bold  text-primary align-content-center mb-4">Tentang Kami</h1>
-                    <p class="lh-lg mb-5 p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellat
+                    <h1 class="fw-bold text-primary align-content-center mb-4" data-aos="fade-down" data-aos-duration="800">Tentang Kami</h1>
+                    <p class="lh-lg mb-5 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellat
                         culpa reiciendis ea quidem voluptatum aut quo quis id neque tempore at, qui tempora dolores
                         voluptatem nisi soluta! Aliquam, provident.</p>
-                    <img src="./assets/images/undraw_engineering-team_13ax.svg" alt="">
+                    <img src="./assets/images/undraw_engineering-team_13ax.svg" alt="" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
                 </div>
 
             </div>
@@ -107,25 +115,25 @@
     <!-- Layanan Kami -->
     <section id="services">
         <div class="container">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="800">
                 <h1 class="fw-bold text-primary">Layanan Kami</h1>
                 <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui quasi numquam
                     eaque repellendus? Earum.</p>
             </div>
             <div class="row services p-4 p-lg-0 gap-3">
-                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary">
+                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                     <i class="fa-solid fa-graduation-cap text-primary"></i>
                     <h4 class="text-primary">Pengaduan Akademik</h4>
                     <p class="lh-lg mt-3 text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
                         similique.</p>
                 </div>
-                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary">
+                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
                     <i class="fa-solid fa-screwdriver-wrench text-primary"></i>
                     <h4 class="text-primary">Pengaduan Fasilitas</h4>
                     <p class="lh-lg mt-3 text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
                         similique.</p>
                 </div>
-                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary">
+                <div class="col p-4 bg-primary-subtle rounded-3 border border-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <i class="fa-solid fa-user-secret text-primary"></i>
                     <h4 class="text-primary">Pengaduan Anonimus</h4>
                     <p class="lh-lg mt-3 text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
@@ -142,14 +150,14 @@
 
     <section id="report">
         <div class="container">
-            <div class="text-end mb-5">
+            <div class="text-end mb-5" data-aos="fade-left" data-aos-duration="800">
                 <h1 class="fw-bold text-primary">Latest Report</h1>
                 <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio eaque impedit
                     recusandae adipisci illo reiciendis, rerum, est distinctio dolore beatae, voluptates perspiciatis.
                     Odio, nemo.</p>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                     <div class="card">
                         <p style="background-color: rgba(0, 0, 0, 0.3);"
                             class="position-absolute text-light rounded-end-3 py-0 px-2">Akademik</p>
@@ -165,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
                     <div class="card">
                         <p style="background-color: rgba(0, 0, 0, 0.3);"
                             class="position-absolute text-light rounded-end-3 py-0 px-2">Akademik</p>
@@ -181,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="card">
                         <p style="background-color: rgba(0, 0, 0, 0.3);"
                             class="position-absolute text-light rounded-end-3 py-0 px-2">Akademik</p>
@@ -198,8 +206,12 @@
                     </div>
                 </div>
             </div>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#report" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                Tampilkan lebih banyak.<i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
         </div>
-        </div>
+
     </section>
 
     <!-- recent report -->
@@ -208,18 +220,15 @@
             <div class="text-end mb-5">
             </div>
             <div class="row"></div>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="#">
-                Tampilkan lebih banyak.<i class="fa-solid fa-arrow-right"></i>
-            </a>
+
         </div>
     </section>
     <!-- TO DO: buat sebuah ikon dan hover link "lebih banyak" untuk bagian laporan-->
 
     <!-- FAQ Section -->
-    <section id="">
+    <section id="faq">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-down" data-aos-duration="800">
                 <h1 class="text-primary fw-bold">FAQ</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde assumenda perferendis quas cum iusto
                     error officia eos quam similique. Iure iste optio suscipit maxime laudantium.</p>
@@ -227,17 +236,16 @@
             <div>
                 <div class="accordion mt-4" id="accordionExample">
                     <div class="row g-4 my-3 row-cols-md-2">
-                        <div class="col">
+                        <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button bg-primary text-white" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="true"
                                         aria-controls="FAQ1">
-                                        Accordion Item #1
+                                        Apakah ada biaya?
                                     </button>
                                 </h2>
-                                <div id="FAQ1" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
+                                <div id="FAQ1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item’s accordion body.</strong> It is shown by
                                         default, until
@@ -253,17 +261,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button bg-primary text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true"
-                                        aria-controls="faq2">
-                                        Accordion Item #1
+                                        data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="true"
+                                        aria-controls="FAQ2">
+                                        Apakah platform ini membantu?
                                     </button>
                                 </h2>
-                                <div id="faq2" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
+                                <div id="FAQ2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item’s accordion body.</strong> It is shown by
                                         default, until
@@ -279,17 +286,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button bg-primary text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="true"
-                                        aria-controls="faq3">
-                                        Accordion Item #1
+                                        data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="true"
+                                        aria-controls="FAQ3">
+                                        Apakah platform ini membantu?
                                     </button>
                                 </h2>
-                                <div id="faq3" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
+                                <div id="FAQ3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item’s accordion body.</strong> It is shown by
                                         default, until
@@ -305,69 +311,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button bg-primary text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="true"
-                                        aria-controls="faq4">
-                                        Accordion Item #1
+                                        data-bs-toggle="collapse" data-bs-target="#FAQ4" aria-expanded="true"
+                                        aria-controls="FAQ4">
+                                        Apakah platform ini membantu?
                                     </button>
                                 </h2>
-                                <div id="faq4" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the first item’s accordion body.</strong> It is shown by
-                                        default, until
-                                        the collapse plugin adds the appropriate classes that we use to style each
-                                        element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default
-                                        variables. It’s also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-primary text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="true"
-                                        aria-controls="faq5">
-                                        Accordion Item #1
-                                    </button>
-                                </h2>
-                                <div id="faq5" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the first item’s accordion body.</strong> It is shown by
-                                        default, until
-                                        the collapse plugin adds the appropriate classes that we use to style each
-                                        element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default
-                                        variables. It’s also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-primary text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="true"
-                                        aria-controls="faq6">
-                                        Accordion Item #1
-                                    </button>
-                                </h2>
-                                <div id="faq6" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
+                                <div id="FAQ4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item’s accordion body.</strong> It is shown by
                                         default, until
@@ -390,17 +343,54 @@
     </section>
 
     <!-- Footer -->
-     <footer class="bg-primary py-5">
+    <footer class="bg-primary py-5" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between row-gap-4">
                 <!-- logo icon -->
-                 <!-- menu - menu -->
-                  <!-- contact -->
+                <div class="col-md-4 text-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="./assets/images/IDN Logo.png" alt="idn logo" width="30">
+                        <h2 class="fw-bold m-0">E-Report</h2>
+                    </div>
+                    <p class="lh-sm m-0 opacity-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+                        veniam?</p>
+                </div>
+
+                <!-- menu - menu -->
+                <div class="col-md-2 d-flex flex-column gap-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h4 class="fw-bold text-white">Menu</h4>
+                    <a href="#hero" class="footer-link text-white text-decoration-none">Home</a>
+                    <a href="#about" class="footer-link text-white text-decoration-none">About</a>
+                    <a href="#services" class="footer-link text-white text-decoration-none">Services</a>
+                    <a href="#report" class="footer-link text-white text-decoration-none">Recent</a>
+                    <a href="#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+                </div>
+                <!-- contact -->
+
+                <div class="col-md-4 d-flex flex-column gap-2 text-white" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                    <h4 class="fw-bold">Contact Us</h4>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        zabran_tringgana_07@idn.sch.id
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        +62-813-9980-8859
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Jalan Raya Jonggol - Dayeuh.
+                    </p>
+                </div>
+
+                <div class="copyright text-center text-white" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <p>&copy; Copyright by <span class="fw-bold">RPL Class</span> 2025, All Right Reserved.</p>
+                </div>
             </div>
 
         </div>
 
-     </footer>
+    </footer>
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -410,6 +400,18 @@
         crossorigin="anonymous"></script>
     <!-- External JS File -->
     <script src="assets/script/main.js"></script>
+    <!-- AOS CDN JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS INITIALIZE -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>
