@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-Report IDN</title>
+
+    <!-- Font Typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CDN Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <!-- CDN Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS CSS  Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand gap-2 d-flex align-items-center animate__animated animate__fadeIn animate__delay-1s"
+                href="index.html#hero">
+                <img src="./assets/images/IDN Logo.png" alt="Logo" width="45" height="45"
+                    class="d-inline-block align-text-top rounded">
+                <span class="fw-bold text-primary-emphasis">IDN E-Report</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reports -->
+    <section id="reports">
+        <div class="container">
+            <div class="col">
+                <div class="col text-center">
+                    <h1 class="text-primary fw-bold">Reports</h1>
+                    <p class="text-muted lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iusto ex,
+                        laudantium ea at perferendis enim, provident nobis cupiditate, dolorem placeat sit corporis.
+                        Exercitationem ex delectus tempore amet suscipit voluptate.</p>
+                </div>
+
+                <!-- Filters & Search -->
+                <div class="row mb-4 g-2 gap-2 gap-md-0 align-items-center">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control shadow-sm" placeholder="Cari Laporan..">
+                    </div>
+
+                    <div class="col-md-3">
+                        <select name="" class="form-select shadow-md" id="">
+                            <option selected>Filter Kategori</option>
+                            <option value="2">Non Akademik</option>
+                            <option value="fasilitas">Fasilitas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select name="" class="form-select shadow-md" id="">
+                            <option selected>Urutkan</option>
+                            <option value="newest">Terbaru</option>
+                            <option value="oldest">Terlama</option>
+                            <option value="popular">Terpoluler</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100 shadow-sm">
+                            <i class="fa-solid fa-filter"></i>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- all reports -->
+                <div class="row mb-4 g-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Akademik</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Raport"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Keterlambatan Pembagian Raport Semester Ganjil</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Rina Amelia</a> • 1 day ago</p>
+                                <p class="card-text">Orang tua mengeluhkan keterlambatan pembagian raport yang seharusnya sudah dibagikan minggu lalu untuk persiapan semester genap.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Fasilitas</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Masjid"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Keran Masjid Bocor dan Lantai Licin</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Ammar Ayyasy</a> • 2 days ago</p>
+                                <p class="card-text">Keran wudhu masjid IDN mengalami kebocoran sehingga lantai menjadi licin dan berbahaya bagi jamaah, perlu perbaikan segera.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Anonimus</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Parkiran"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Parkiran Motor Siswa Sering Penuh dan Berantakan</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Anonim</a> • 3 days ago</p>
+                                <p class="card-text">Area parkir motor terlihat tidak teratur dan sering penuh di pagi hari, menyulitkan siswa yang datang tepat waktu.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Akademik</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Konsultasi"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Jadwal Konsultasi Tugas Akhir Sulit Ditemui Dosen</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Fajar Pratama</a> • 4 days ago</p>
+                                <p class="card-text">Beberapa siswa kelas XII kesulitan menemui dosen pembimbing untuk konsultasi TA karena jadwal yang bentrok dan tidak pasti.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Fasilitas</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="WiFi Lab"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">WiFi Laboratorium RPL Sering Terputus</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Budi Santoso</a> • 5 days ago</p>
+                                <p class="card-text">Koneksi internet di lab RPL tidak stabil saat praktikum berlangsung, menghambat pengerjaan project website dan deploy tugas.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <p style="background-color: rgba(0, 0, 0, 0.5);"
+                                class="position-absolute text-light rounded-end-3 py-0 px-2 mt-2">Anonimus</p>
+                            <a href="detail-reports.html"><img style="height: 400px; object-fit: cover;"
+                                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Toilet"></a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Kebersihan Toilet Lantai 2 Kurang Terjaga</h5>
+                                <p class="text-muted small">By: <a href="detail-reports.html">Anonim</a> • 6 days ago</p>
+                                <p class="card-text">Laporan anonim mengenai kondisi toilet lantai 2 yang kurang bersih dan kekurangan tisu serta sabun cuci tangan.</p>
+                                <a href="detail-reports.html" class="btn btn-primary mt-auto align-self-start">Lihat Laporan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <div class="container">
+            <div class="row justify-content-between row-gap-4">
+                <!-- logo icon -->
+                <div class="col-md-4 text-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="./assets/images/IDN Logo.png" alt="idn logo" width="30">
+                        <h2 class="fw-bold m-0">E-Report</h2>
+                    </div>
+                    <p class="lh-sm m-0 opacity-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+                        veniam?</p>
+                </div>
+
+                <!-- menu - menu -->
+                <div class="col-md-2 d-flex flex-column gap-2" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="200">
+                    <h4 class="fw-bold text-white">Menu</h4>
+                    <a href="index.html#hero" class="footer-link text-white text-decoration-none">Home</a>
+                    <a href="index.html#about" class="footer-link text-white text-decoration-none">About</a>
+                    <a href="index.html#services" class="footer-link text-white text-decoration-none">Services</a>
+                    <a href="index.html#recent" class="footer-link text-white text-decoration-none">Recent</a>
+                    <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+                </div>
+                <!-- contact -->
+
+                <div class="col-md-4 d-flex flex-column gap-2 text-white" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-delay="300">
+                    <h4 class="fw-bold">Contact Us</h4>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        zabran_tringgana_07@idn.sch.id
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        +62-813-9980-8859
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Jalan Raya Jonggol - Dayeuh.
+                    </p>
+                </div>
+
+                <div class="copyright text-center text-white" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="100">
+                    <p>&copy; Copyright by <span class="fw-bold">RPL Class</span> 2025, All Right Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <!-- External JS File -->
+    <script src="assets/script/main.js"></script>
+    <!-- AOS CDN JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS INITIALIZE -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
