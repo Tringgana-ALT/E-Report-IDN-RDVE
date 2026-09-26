@@ -65,6 +65,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="guide.html">Guide</a>
+                    </li>
 
                 </ul>
             </div>
@@ -75,11 +78,14 @@
     <section id="reports">
         <div class="container">
             <div class="col">
-                <div class="col text-center">
-                    <h1 class="text-primary fw-bold">Reports</h1>
-                    <p class="text-muted lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iusto ex,
-                        laudantium ea at perferendis enim, provident nobis cupiditate, dolorem placeat sit corporis.
-                        Exercitationem ex delectus tempore amet suscipit voluptate.</p>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mb-4 text-center text-md-start">
+                    <div>
+                        <h1 class="text-primary fw-bold mb-2">Reports</h1>
+                        <p class="text-muted lh-lg mb-0">Temukan dan kelola semua laporan dari siswa IDN. Sampaikan aspirasi, keluhan fasilitas, atau laporan akademik dengan mudah dan transparan.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary shadow-sm flex-shrink-0 px-4 py-2" data-bs-toggle="modal" data-bs-target="#tambahLaporanModal">
+                        <i class="fa-solid fa-plus me-2"></i>Tambah Laporan
+                    </button>
                 </div>
 
                 <!-- Filters & Search -->
@@ -219,6 +225,49 @@
         </div>
     </section>
 
+    <!-- Modal Tambah Laporan -->
+    <div class="modal fade" id="tambahLaporanModal" tabindex="-1" aria-labelledby="tambahLaporanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-primary" id="tambahLaporanModalLabel"><i class="fa-solid fa-file-circle-plus me-2"></i>Tambah Laporan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="judulLaporan" class="form-label fw-semibold">Judul Laporan <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="judulLaporan" placeholder="Contoh: AC Kelas XII RPL Rusak" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kategoriLaporan" class="form-label fw-semibold">Kategori <span class="text-danger">*</span></label>
+                            <select class="form-select" id="kategoriLaporan" required>
+                                <option value="" selected disabled>Pilih Kategori</option>
+                                <option value="akademik">Akademik</option>
+                                <option value="fasilitas">Fasilitas</option>
+                                <option value="anonimus">Anonimus</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="deskripsiLaporan" class="form-label fw-semibold">Deskripsi Laporan <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="deskripsiLaporan" rows="4" placeholder="Jelaskan secara detail laporan Anda..." required></textarea>
+                            <div class="form-text">Jelaskan kronologi, lokasi, dan dampak dari laporan.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gambarLaporan" class="form-label fw-semibold">Upload Foto/Gambar <span class="text-muted fw-normal">(Opsional)</span></label>
+                            <input class="form-control" type="file" id="gambarLaporan" accept="image/*">
+                            <div class="form-text">Format: JPG, PNG, JPEG. Maks 2MB.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-paper-plane me-2"></i>Kirim Laporan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-primary py-5" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <div class="container">
@@ -242,6 +291,7 @@
                     <a href="index.html#services" class="footer-link text-white text-decoration-none">Services</a>
                     <a href="index.html#recent" class="footer-link text-white text-decoration-none">Recent</a>
                     <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+                    <a href="guide.html" class="footer-link text-white text-decoration-none">Guide</a>
                 </div>
                 <!-- contact -->
 

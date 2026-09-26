@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide | E-Report IDN</title>
+
+    <!-- Font Typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CDN Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <!-- CDN Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS CSS  Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand gap-2 d-flex align-items-center animate__animated animate__fadeIn animate__delay-1s"
+                href="index.html#hero">
+                <img src="./assets/images/IDN Logo.png" alt="Logo" width="45" height="45"
+                    class="d-inline-block align-text-top rounded">
+                <span class="fw-bold text-primary-emphasis">IDN E-Report</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-bold active" aria-current="page" href="guide.html">Guide</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Header -->
+    <section class="py-5 bg-primary-subtle">
+        <div class="container">
+            <nav aria-label="breadcrumb" data-aos="fade-down" data-aos-duration="800">
+                <ol class="breadcrumb mb-3">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Guide</li>
+                </ol>
+            </nav>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right" data-aos-duration="800">
+                    <h1 class="fw-bold text-primary display-5">Panduan Penggunaan<br><span class="text-primary-emphasis">E-Report IDN</span></h1>
+                    <p class="lh-lg text-muted mt-3">Pahami alur kerja website E-Report IDN dalam 5 menit. Dari cara membuat laporan, memilih kategori, hingga memantau tindak lanjut laporan kamu.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-4">
+                        <a href="#cara-kerja" class="btn btn-primary px-4"><i class="fa-solid fa-play me-2"></i>Mulai Panduan</a>
+                        <a href="reports.html" class="btn btn-outline-primary px-4"><i class="fa-solid fa-file-lines me-2"></i>Lihat Laporan</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <img src="./assets/images/undraw_engineering-team_13ax.svg" alt="Guide Illustration" class="img-fluid" style="max-height: 320px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apa itu E-Report -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill mb-3"><i class="fa-solid fa-circle-info me-1"></i> Tentang Platform</span>
+                    <h2 class="fw-bold text-primary">Apa itu E-Report IDN?</h2>
+                    <p class="text-muted lh-lg">E-Report IDN adalah platform pelaporan digital untuk siswa IDN Boarding School. Kamu bisa melaporkan masalah akademik, kerusakan fasilitas, atau menyampaikan aspirasi secara anonim dengan transparan dan terstruktur.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                    <div class="card h-100 border-primary bg-primary-subtle shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-primary text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;"><i class="fa-solid fa-graduation-cap fs-4"></i></div>
+                            <h5 class="fw-bold text-primary">Akademik</h5>
+                            <p class="text-primary mb-0 lh-lg small">Jadwal ujian, tugas, raport, konsultasi TA, dan kendala belajar. Laporan akan diteruskan ke bagian akademik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div class="card h-100 border-primary bg-primary-subtle shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-primary text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;"><i class="fa-solid fa-screwdriver-wrench fs-4"></i></div>
+                            <h5 class="fw-bold text-primary">Fasilitas</h5>
+                            <p class="text-primary mb-0 lh-lg small">AC rusak, keran bocor, WiFi lab, kebersihan toilet, parkiran. Tim sarana akan cek dan perbaiki.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="card h-100 border-primary bg-primary-subtle shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-primary text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;"><i class="fa-solid fa-user-secret fs-4"></i></div>
+                            <h5 class="fw-bold text-primary">Anonimus</h5>
+                            <p class="text-primary mb-0 lh-lg small">Laporan tanpa nama untuk hal sensitif. Identitas disembunyikan, tapi tetap ditindaklanjuti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-primary d-flex align-items-start gap-3 mt-4" role="alert" data-aos="fade-up" data-aos-duration="800">
+                <i class="fa-solid fa-lightbulb mt-1"></i>
+                <div><strong>Semua laporan tampil di halaman Reports</strong> dan bisa dilihat publik (kecuali identitas pelapor anonimus). Gunakan bahasa yang sopan dan sertakan bukti foto agar cepat diproses.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja -->
+    <section id="cara-kerja" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="800">
+                <h2 class="fw-bold text-primary">Cara Kerja Website</h2>
+                <p class="text-muted">Alur 4 langkah dari laporan dibuat sampai ditindaklanjuti</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <div class="card-body">
+                            <span class="badge bg-primary rounded-pill mb-3 px-3 py-2">Langkah 1</span>
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-file-circle-plus fa-2x"></i></div>
+                            <h5 class="fw-bold">Buat Laporan</h5>
+                            <p class="text-muted small lh-lg">Buka <a href="reports.html" class="fw-semibold">reports.html</a> lalu klik <span class="badge bg-primary">Tambah Laporan</span>. Tidak perlu login.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <div class="card-body">
+                            <span class="badge bg-primary rounded-pill mb-3 px-3 py-2">Langkah 2</span>
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-list-check fa-2x"></i></div>
+                            <h5 class="fw-bold">Isi Form</h5>
+                            <p class="text-muted small lh-lg">Isi <strong>Judul</strong>, pilih <strong>Kategori</strong>, tulis <strong>Deskripsi</strong> detail, dan <strong>Upload Gambar</strong> (opsional, JPG/PNG maks 2MB).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <div class="card-body">
+                            <span class="badge bg-primary rounded-pill mb-3 px-3 py-2">Langkah 3</span>
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-rectangle-list fa-2x"></i></div>
+                            <h5 class="fw-bold">Tayang di Reports</h5>
+                            <p class="text-muted small lh-lg">Laporan muncul sebagai <strong>card</strong> di halaman Reports. Gunakan <strong>Search, Filter Kategori, Urutkan</strong> untuk mencari.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <div class="card-body">
+                            <span class="badge bg-primary rounded-pill mb-3 px-3 py-2">Langkah 4</span>
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-comments fa-2x"></i></div>
+                            <h5 class="fw-bold">Detail & Komentar</h5>
+                            <p class="text-muted small lh-lg">Klik <strong>Lihat Laporan</strong> atau gambar card untuk buka <a href="detail-reports.html" class="fw-semibold">detail-reports.html</a>. Beri komentar & pantau status.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="reports.html" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#exampleModalGuide"><i class="fa-solid fa-plus me-2"></i>Coba Tambah Laporan</a>
+                <p class="text-muted small mt-2">Tombol ini mengarah ke modal yang sama di halaman Reports</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigasi Halaman -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <h3 class="fw-bold text-primary mb-3">Pahami Navigasi Halaman</h3>
+                    <div class="accordion" id="navAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#nav1" aria-expanded="true" aria-controls="nav1">
+                                    <i class="fa-solid fa-house me-2 text-primary"></i> index.html — Home
+                                </button>
+                            </h2>
+                            <div id="nav1" class="accordion-collapse collapse show" data-bs-parent="#navAccordion">
+                                <div class="accordion-body text-muted lh-lg small">
+                                    <strong>Navbar:</strong> Home, About, Services, Recent, FAQ, Guide (hash link <code>#hero #about #services #recent #faq</code>).<br>
+                                    <strong>Hero:</strong> tombol About Us & Let's Start → <code>reports.html</code>.<br>
+                                    <strong>Recent:</strong> 3 card terbaru, klik gambar/button → <code>detail-reports.html</code>. Link “Tampilkan lebih banyak” → <code>reports.html#reports</code>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#nav2" aria-expanded="false" aria-controls="nav2">
+                                    <i class="fa-solid fa-table-list me-2 text-primary"></i> reports.html — Semua Laporan
+                                </button>
+                            </h2>
+                            <div id="nav2" class="accordion-collapse collapse" data-bs-parent="#navAccordion">
+                                <div class="accordion-body text-muted lh-lg small">
+                                    <strong>Header:</strong> Judul Reports + button <span class="badge bg-primary">Tambah Laporan</span> (modal). Responsif: desktop side-by-side, mobile center.<br>
+                                    <strong>Filter:</strong> Search, Filter Kategori, Urutkan, button Filter (UI only).<br>
+                                    <strong>Grid:</strong> 6 card (Akademik/Fasilitas/Anonimus) setiap card link ke <code>detail-reports.html</code>.<br>
+                                    <strong>Footer:</strong> link ke <code>index.html#hero</code> dll + Guide.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#nav3" aria-expanded="false" aria-controls="nav3">
+                                    <i class="fa-solid fa-file-lines me-2 text-primary"></i> detail-reports.html — Detail
+                                </button>
+                            </h2>
+                            <div id="nav3" class="accordion-collapse collapse" data-bs-parent="#navAccordion">
+                                <div class="accordion-body text-muted lh-lg small">
+                                    Breadcrumb Home > All Reports > Judul. Sidebar: Featured (3 laporan) & Kategori badges.<br>
+                                    Konten utama: judul, meta author, gambar 400px, deskripsi + blockquote, form komentar. Navbar & footer sama.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#nav4" aria-expanded="false" aria-controls="nav4">
+                                    <i class="fa-solid fa-book-open me-2 text-primary"></i> guide.html — Halaman Ini
+                                </button>
+                            </h2>
+                            <div id="nav4" class="accordion-collapse collapse" data-bs-parent="#navAccordion">
+                                <div class="accordion-body text-muted lh-lg small">
+                                    Halaman panduan yang sedang kamu baca. Menjelaskan alur website, kategori, form, dan etika. Gunakan navbar Guide untuk kembali kapan saja.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-primary text-white fw-bold"><i class="fa-solid fa-pen-to-square me-2"></i>Anatomi Form “Tambah Laporan”</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex gap-3">
+                                <span class="text-primary mt-1"><i class="fa-solid fa-heading"></i></span>
+                                <div>
+                                    <strong>Judul Laporan</strong>
+                                    <div class="text-muted small">Free text, wajib. Contoh: “Keran Masjid Bocor dan Lantai Licin”.</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex gap-3">
+                                <span class="text-primary mt-1"><i class="fa-solid fa-tags"></i></span>
+                                <div>
+                                    <strong>Kategori Laporan</strong>
+                                    <div class="text-muted small">Pilih satu: Akademik / Fasilitas / Anonimus (dropdown <code>.form-select</code>).</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex gap-3">
+                                <span class="text-primary mt-1"><i class="fa-solid fa-align-left"></i></span>
+                                <div>
+                                    <strong>Deskripsi Laporan</strong>
+                                    <div class="text-muted small">Textarea 4 baris, wajib. Tulis kronologi, lokasi, waktu, dampak.</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex gap-3">
+                                <span class="text-primary mt-1"><i class="fa-solid fa-image"></i></span>
+                                <div>
+                                    <strong>Upload Gambar</strong>
+                                    <div class="text-muted small">Opsional. <code>input type="file" class="form-control" accept="image/*"</code> (JPG/PNG, maks 2MB).</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer bg-light d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Modal id: <code>#tambahLaporanModal</code></span>
+                            <a href="reports.html" class="btn btn-sm btn-primary">Buka Form</a>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning mt-3 small lh-lg mb-0" role="alert">
+                        <i class="fa-solid fa-triangle-exclamation me-2"></i><strong>Catatan:</strong> Versi ini statis (tanpa backend). Submit “Kirim Laporan” hanya menutup modal (data tidak tersimpan). Cocok untuk demo / presentasi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Etika -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-primary"><i class="fa-solid fa-star me-2"></i>Tips Laporan Cepat Ditindak</h5>
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-check text-success mt-1"></i><span class="text-muted small lh-lg">Judul spesifik, bukan “Minta tolong” tapi “AC Kelas XII RPL Tidak Dingin”.</span></li>
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-check text-success mt-1"></i><span class="text-muted small lh-lg">Deskripsi lengkap: kapan, di mana, siapa terdampak, sudah lapor ke siapa.</span></li>
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-check text-success mt-1"></i><span class="text-muted small lh-lg">Sertakan foto bukti dari HP (opsional tapi sangat membantu).</span></li>
+                                <li class="d-flex gap-2"><i class="fa-solid fa-check text-success mt-1"></i><span class="text-muted small lh-lg">Pilih kategori yang tepat agar diteruskan ke divisi yang benar.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-primary"><i class="fa-solid fa-scale-balanced me-2"></i>Etika & Aturan</h5>
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-xmark text-danger mt-1"></i><span class="text-muted small lh-lg">Jangan gunakan kata kasar, SARA, atau menyebar hoax.</span></li>
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-xmark text-danger mt-1"></i><span class="text-muted small lh-lg">Jangan spam laporan yang sama berulang kali.</span></li>
+                                <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-shield-halved text-primary mt-1"></i><span class="text-muted small lh-lg">Anonimus tetap terlacak admin, jangan buat laporan palsu.</span></li>
+                                <li class="d-flex gap-2"><i class="fa-solid fa-shield-halved text-primary mt-1"></i><span class="text-muted small lh-lg">Gunakan komentar di detail untuk diskusi, bukan untuk bullying.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="card bg-primary text-white border-0 shadow text-center p-5" data-aos="zoom-in" data-aos-duration="800">
+                <h3 class="fw-bold">Siap membuat laporan pertama?</h3>
+                <p class="opacity-75 mt-2">Klik Tambah Laporan di halaman Reports atau mulai jelajahi laporan terbaru dari temanmu.</p>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+                    <a href="reports.html" class="btn btn-light text-primary fw-semibold px-4"><i class="fa-solid fa-plus me-2"></i>Tambah Laporan Sekarang</a>
+                    <a href="index.html#recent" class="btn btn-outline-light px-4">Lihat Recent Reports</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <div class="container">
+            <div class="row justify-content-between row-gap-4">
+                <!-- logo icon -->
+                <div class="col-md-4 text-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="./assets/images/IDN Logo.png" alt="idn logo" width="30">
+                        <h2 class="fw-bold m-0">E-Report</h2>
+                    </div>
+                    <p class="lh-sm m-0 opacity-50">Platform pelaporan digital siswa IDN — akademik, fasilitas, dan anonimus dalam satu tempat.</p>
+                </div>
+
+                <!-- menu - menu -->
+                <div class="col-md-2 d-flex flex-column gap-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h4 class="fw-bold text-white">Menu</h4>
+                    <a href="index.html#hero" class="footer-link text-white text-decoration-none">Home</a>
+                    <a href="index.html#about" class="footer-link text-white text-decoration-none">About</a>
+                    <a href="index.html#services" class="footer-link text-white text-decoration-none">Services</a>
+                    <a href="index.html#recent" class="footer-link text-white text-decoration-none">Recent</a>
+                    <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+                    <a href="guide.html" class="footer-link text-white text-decoration-none">Guide</a>
+                </div>
+                <!-- contact -->
+
+                <div class="col-md-4 d-flex flex-column gap-2 text-white" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                    <h4 class="fw-bold">Contact Us</h4>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        zabran_tringgana_07@idn.sch.id
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        +62-813-9980-8859
+                    </p>
+                    <p class="m-0 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Jalan Raya Jonggol - Dayeuh.
+                    </p>
+                </div>
+
+                <div class="copyright text-center text-white" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <p>&copy; Copyright by <span class="fw-bold">RPL Class</span> 2025, All Right Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <!-- External JS File -->
+    <script src="assets/script/main.js"></script>
+    <!-- AOS CDN JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS INITIALIZE -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
